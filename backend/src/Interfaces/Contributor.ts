@@ -22,5 +22,4 @@ export interface IContributor
      * Using to get data via discord.
      */
     discord_id?: string;
-
 }
