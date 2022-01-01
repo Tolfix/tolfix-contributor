@@ -54,7 +54,7 @@ const Home: NextPage = () => {
             </h2>
             <div className='space-y-8 columns-2xs gap-x-12 mt-5'>
               <p>
-              The contribution program is a way for us to receive help from contributors around the globe and reward them for their help in its growth. By joining you'll be part of a community of contributors of Tolfix.
+                The contribution program is a way for us to receive help from contributors around the globe and reward them for their help in its growth. By joining you'll be part of a community of contributors of Tolfix.
               </p>
             </div>
           </div>
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
             </h2>
             <div className='space-y-8 columns-2xs gap-x-12 mt-5'>
               <p>
-              When you join the program, our systems will keep track of your progress. It will track your contributions to our repositories and services then calculate them to determine your reward.
+                When you join the program, our systems will keep track of your progress. It will track your contributions to our repositories and services then calculate them to determine your reward.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
                 </ul>
               </p>
               <p>
-              You'll receive notifications from our system when you unlock access to a new award. Once you've hit the required the level of contribution experience.
+                You'll receive notifications from our system when you unlock access to a new award. Once you've hit the required the level of contribution experience.
               </p>
             </div>
           </div>
@@ -116,7 +116,7 @@ const Home: NextPage = () => {
             </h2>
             <div className='space-y-8 columns-2xs gap-x-12 mt-5'>
               <p>
-              We earn no money from this. We only receive a trustworthy community of people who are willing to help us grow.
+                We earn no money from this. We only receive a trustworthy community of people who are willing to help us grow.
               </p>
             </div>
           </div>
