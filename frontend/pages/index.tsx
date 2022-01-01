@@ -102,7 +102,7 @@ const Home: NextPage = () => {
                   <button className='
                     btn-green 
                     disabled:hover:cursor-not-allowed
-                    ' disabled>
+                    '>
                     Join Contribution Program
                   </button>
                 </div>

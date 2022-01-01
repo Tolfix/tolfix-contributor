@@ -30,7 +30,7 @@ export default class JoinRouter
 
             // Sending them to /v1/oauth2/github,
             // to link them with github so we can create an account for them
-            return res.redirect("/v1/oauth2/github");
+            return res.redirect("/api/v1/oauth2/github");
         });
 
     }
