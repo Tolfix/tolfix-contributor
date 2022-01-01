@@ -5,6 +5,9 @@ RUN npm install --force
 COPY ./frontend .
 RUN npm run build
 
+FROM nginx:1.19-alpine AS nginx
+COPY ./etc/nginx.conf /etc/nginx/conf.d/default.conf
+
 FROM node:16-alpine AS backend
 
 RUN apk update && \
@@ -12,7 +15,7 @@ RUN apk update && \
     apk add nginx && \
     apk add git
 
-COPY ./etc/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=nginx /etc/nginx /etc/nginx
 COPY --from=frontend ./app/out /usr/share/nginx/html
 
 RUN npm install -g @types/node \
