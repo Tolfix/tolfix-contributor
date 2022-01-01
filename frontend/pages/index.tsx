@@ -98,10 +98,11 @@ const Home: NextPage = () => {
             <div className='space-y-8 gap-x-12 mt-5'>
               <p>
                 You can join for free by clicking on the button bellow.
-                <div>
+                <div className='mt-5'>
                   <a className='
                     btn-green 
                     disabled:hover:cursor-not-allowed
+                    
                     '
                     href='/join'
                   >
