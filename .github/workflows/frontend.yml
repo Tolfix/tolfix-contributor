@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'frontend/pages/**'
+      - 'frontend/public/**'
+      - 'frontend/styles/**'
+      - 'frontend/components/**'
       - 'etc/**'
     branches:
       - master

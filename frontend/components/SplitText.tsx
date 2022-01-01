@@ -1,7 +1,8 @@
 import { Component } from "react"
 
 export class SplitText extends Component {
-    render(){
+    render()
+    {
         return(
             // @ts-ignore
             <span aria-label={this.props.copy} role={this.props.role}>
