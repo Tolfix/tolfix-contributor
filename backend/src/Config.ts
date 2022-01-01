@@ -26,7 +26,7 @@ export const Github_Org = "Tolfix";
 export const Github_API = "https://api.github.com/";
 
 /*
-*   Discord
+* Discord
 */
 export const Discord_Token = process.env.DISCORD_TOKEN ?? "";
 export const Discord_Client_Id = process.env.DISCORD_CLIENT_ID ?? "";
