@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+@layer base {
+  .btn-green {
+    @apply bg-green-700 p-2 rounded text-gray-50 mt-2
+  }
+  .btn-green:hover {
+    @apply bg-green-600
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.elementE {
+  opacity: 0;
+  transition: 1050ms;
+}
+
+.elementE.show {
+  opacity: 1;
+}
+
+/* Source: https://fossheim.io/writing/posts/react-text-splitting-animations/ */
+h1 span span {
+  color: rgb(100, 192, 24);
+  position: relative;
+  opacity: 0;
+  animation: move-text 0.75s forwards;
+}
+h1 span span:nth-child(2n) { color: rgb(120, 206, 64); }
+h1 span span:nth-child(3n) { color: rgb(64, 224, 112); }
+h1 span span:nth-child(4n) { color: rgb(71, 172, 84); }
+h1 span span:nth-child(5n) { color: rgb(43, 226, 113); }
+
+@keyframes move-text {
+  0% {
+    bottom: -0.2em;
+    opacity: 1;
+  }
+  
+  50% {
+    bottom: 0.2em;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}

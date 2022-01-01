@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+build
+out
+.DS_Store
+.git
+.env

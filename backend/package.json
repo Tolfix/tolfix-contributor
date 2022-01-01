@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node ./build/Main.js",
+    "watch": "nodemon ./build/Main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/common-tags": "^1.8.1",
+    "@types/cors": "^2.8.12",
+    "@types/node": "^17.0.6",
+    "colors": "^1.4.0",
+    "common-tags": "^1.8.2",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "date-and-time": "^2.0.1",
+    "discord.js": "^13.5.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.1.4",
+    "mongoose-auto-increment": "^5.0.1",
+    "node-fetch": "^2.6.6",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "@types/date-and-time": "^0.13.0",
+    "@types/express": "^4.17.13",
+    "@types/express-session": "^1.17.4",
+    "@types/mongoose-auto-increment": "^5.0.34",
+    "@types/nodemailer": "^6.4.4"
+  }
+}
