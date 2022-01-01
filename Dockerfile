@@ -10,7 +10,7 @@ COPY ./etc/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=frontend ./app/out /usr/share/nginx/html
 
 FROM node:16-alpine AS backend
-WORKDIR /backend
+WORKDIR /b
 COPY ./backend/package.json ./
 RUN npm install --force
 COPY ./backend/ .

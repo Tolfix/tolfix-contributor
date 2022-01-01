@@ -6,7 +6,7 @@ on:
       - 'backend/src/**'
       - 'frontend/pages/**'
     branches:
-      - main
+      - master
 
 
 jobs:

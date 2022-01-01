@@ -34,7 +34,7 @@ export const Discord_Client_Secret = process.env.DISCORD_CLIENT_SECRET ?? "";
 export const Discord_Contributor_Role_Id = "876148367779037214";
 
 export const SMTPConfig = {
-    host: process.env.SMTP_HOST ?? "smtp.gmail.com",
+    host: process.env.SMTP_HOST ?? "",
     port: process.env.SMTP_PORT ?? 465,
     secure: process.env.SMTP_SECURE ?? true,
     username: process.env.SMTP_USER ?? "",
