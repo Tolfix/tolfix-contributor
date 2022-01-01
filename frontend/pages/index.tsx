@@ -99,12 +99,14 @@ const Home: NextPage = () => {
               <p>
                 You can join for free by clicking on the button bellow.
                 <div>
-                  <button className='
+                  <a className='
                     btn-green 
                     disabled:hover:cursor-not-allowed
-                    '>
+                    '
+                    href='/join'
+                  >
                     Join Contribution Program
-                  </button>
+                  </a>
                 </div>
               </p>
             </div>
