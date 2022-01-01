@@ -5,6 +5,7 @@ on:
     paths:
       - 'backend/src/**'
       - 'frontend/pages/**'
+      - 'etc/**'
     branches:
       - master
 

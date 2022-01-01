@@ -38,4 +38,6 @@ ENV SMTP_PORT=""
 ENV SMTP_USER=""
 ENV SMTP_PASS=""
 
-CMD [ "node", "./build/Main.js" ]
+ADD ./etc/start.sh /etc/start.sh
+
+CMD [ "/etc/start.sh" ]
