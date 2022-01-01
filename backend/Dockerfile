@@ -1,22 +1,8 @@
-FROM node:14-alpine AS frontend
-WORKDIR /app
-COPY ./frontend/package.json ./
-RUN npm install --force
-COPY ./frontend .
-RUN npm run build
-
-FROM nginx:1.19-alpine AS nginx
-COPY ./etc/nginx.conf /etc/nginx/conf.d/default.conf
-
 FROM node:16-alpine AS backend
 
 RUN apk update && \
     apk upgrade && \
-    apk add nginx && \
     apk add git
-
-COPY --from=nginx /etc/nginx /etc/nginx
-COPY --from=frontend ./app/out /usr/share/nginx/html
 
 RUN npm install -g @types/node \
     && npm install -g typescript@4.3.5
@@ -38,7 +24,4 @@ ENV SMTP_PORT=""
 ENV SMTP_USER=""
 ENV SMTP_PASS=""
 
-ADD ./etc/start.sh /etc/start.sh
-
-RUN chmod +x /etc/start.sh
-ENTRYPOINT ["/etc/start.sh"]
+CMD [ "node", "./build/Main.js" ]
