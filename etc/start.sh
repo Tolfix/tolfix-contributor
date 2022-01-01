@@ -2,3 +2,5 @@
 
 nginx
 node /backend/build/Main.js
+
+exec "$@"
