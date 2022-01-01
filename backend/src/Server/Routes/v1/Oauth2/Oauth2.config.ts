@@ -15,7 +15,7 @@ export default class Oauth2Router
     constructor(server: Application, version: string)
     {
         this.server = server;
-        this.server.use(`/${version}/oauth2`, this.router);
+        this.server.use(`/api/${version}/oauth2`, this.router);
 
         this.router.get("/github", (req, res) => {
             let github_uri = `https://github.com/login/oauth/authorize?client_id=${Github_Client_Id}&scope=${encodeURIComponent("user:email read:user")}`

@@ -11,7 +11,7 @@ export default class JoinRouter
     constructor(server: Application, version: string)
     {
         this.server = server;
-        this.server.use(`/${version}/join`, this.router);
+        this.server.use(`/api/${version}/join`, this.router);
 
         this.router.post("/", async (req, res) => {
             const email = req.body.email;

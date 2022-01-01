@@ -40,4 +40,4 @@ ENV SMTP_PASS=""
 
 ADD ./etc/start.sh /etc/start.sh
 
-CMD [ "/etc/start.sh" ]
+RUN chmod +x /etc/start.sh
