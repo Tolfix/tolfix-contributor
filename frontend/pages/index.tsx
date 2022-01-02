@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                 </div>
               </p>
               <p>
-                All of these gives you some amount of experience. Some are automated and gives a very small experience. Some are not automated and gives a large experience, which gets handled by our administrators, and these can be by helping the community.
+                All of these gives you some amount of experience. Some are automated and gives a very small experience. Some are not automated and gives a large experience, which gets handled by our administrators, and these can be by helping the community, which can be inviting members to the program or our discord server.
               </p>
             </div>
           </div>
