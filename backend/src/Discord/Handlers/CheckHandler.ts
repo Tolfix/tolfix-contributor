@@ -13,7 +13,7 @@ export default function CheckerHandler(client: Client)
         // Check if any members have joined the program, and if not assign them the role
         // find all where discord_id is not null
         ContributorModel.find({ discord_id: {
-            $not: null
+            $ne: null
         } }).then((contributors) => {
 
             for(const contributor of contributors)
