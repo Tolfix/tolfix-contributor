@@ -115,6 +115,63 @@ const Home: NextPage = () => {
 
           <div id='a5' className='mt-10 elementE text-center sm:text-left px-5 sm:px-0'>
             <h2 className='text-3xl text-green'>
+              What counts as a contribution?
+            </h2>
+            <div className='space-y-8 columns-2xs gap-x-12 mt-5'>
+              <p>
+                Anyone who has joined the Contribution Program gets experience for their contributions. Thus you can earn experience various of ways.
+              </p>
+              <p>
+                Here is a list of ways you can contribute.
+                <div>
+                  <ul className='px-5 list-none sm:list-disc'>
+                    <li>
+                      <span className='font-bold'>Commits</span>
+                      <p>
+                        You can contribute by making commits to our repositories.
+                      </p>
+                    </li>
+                    <li>
+                      <span className='font-bold'>Pull Requests</span>
+                      <p>
+                        You can contribute by making pull requests to our repositories.
+                      </p>
+                    </li>
+                    <li>
+                      <span className='font-bold'>Issues</span>
+                      <p>
+                        You can contribute by making issues to our repositories.
+                      </p>
+                    </li>
+                    <li>
+                      <span className='font-bold'>Forks</span>
+                      <p>
+                        You can contribute by forking our repositories.
+                      </p>
+                    </li>
+                    <li>
+                      <span className='font-bold'>Starred Repositories</span>
+                      <p>
+                        You can contribute by starring our repositories.
+                      </p>
+                    </li>
+                    <li>
+                      <span className='font-bold'>Following</span>
+                      <p>
+                        You can contribute by following our members.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </p>
+              <p>
+                All of these gives you some amount of experience. Some are automated and gives a very small experience. Some are not automated and gives a large experience, which gets handled by our administrators, and these can be by helping the community.
+              </p>
+            </div>
+          </div>
+
+          <div id='a5' className='mt-10 elementE text-center sm:text-left px-5 sm:px-0'>
+            <h2 className='text-3xl text-green'>
               How does Tolfix earn from it?
             </h2>
             <div className='space-y-8 columns-2xs gap-x-12 mt-5'>
