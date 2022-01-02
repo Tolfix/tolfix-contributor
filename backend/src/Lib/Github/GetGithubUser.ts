@@ -20,7 +20,7 @@ export async function GetGithubUser(access_token: string)
     let user_data = await user.json() as any;
     let email_data = ((await email.json() as Array<any>))
     let b = false;
-    Logger.info(email_data)
+    // Logger.info(email_data)
     // Check if an array is empty
     if(email_data && email_data.length > 0)
     {

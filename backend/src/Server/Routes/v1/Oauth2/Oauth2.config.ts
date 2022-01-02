@@ -1,7 +1,7 @@
 import { Application, Router } from "express";
 import AW from "../../../../Lib/AW";
 import fetch from "node-fetch";
-import { Github_Client_Id, Github_Client_Secret } from "../../../../Config";
+import { Full_Domain, Github_Client_Id, Github_Client_Secret } from "../../../../Config";
 import { GetGithubUser } from "../../../../Lib/Github/GetGithubUser";
 import ContributorModel from "../../../../Database/Schemas/Contributor";
 import CacheSession from "../../../../Cache/Server/CacheSession";
@@ -18,7 +18,7 @@ export default class Oauth2Router
         this.server.use(`/api/${version}/oauth2`, this.router);
 
         this.router.get("/github", (req, res) => {
-            let github_uri = `https://github.com/login/oauth/authorize?client_id=${Github_Client_Id}&scope=${encodeURIComponent("user:email read:user")}`
+            let github_uri = `https://github.com/login/oauth/authorize?client_id=${Github_Client_Id}&scope=${encodeURIComponent("user:email read:user")}&redirect_uri=${encodeURIComponent(`${Full_Domain}/api/v1/oauth2/github/callback`)}`
             return res.redirect(github_uri);
         });
 

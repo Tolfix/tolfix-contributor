@@ -31,6 +31,7 @@ export const Github_API = "https://api.github.com/";
 export const Discord_Token = process.env.DISCORD_TOKEN ?? "";
 export const Discord_Client_Id = process.env.DISCORD_CLIENT_ID ?? "";
 export const Discord_Client_Secret = process.env.DISCORD_CLIENT_SECRET ?? "";
+export const Discord_Guild_Id = process.env.DISCORD_GUILD_ID ?? "";
 export const Discord_Contributor_Role_Id = "876148367779037214";
 
 /**
