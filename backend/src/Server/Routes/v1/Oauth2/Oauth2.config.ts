@@ -68,19 +68,18 @@ export default class Oauth2Router
 
             SendEmail(dataObjectUser.email, "Welcome to the program", {
                 isHTML: true,
-                body: `<div>
-                <div style="text-align: center;"><span><img src="https://cdn.tolfix.com/images/Tolfix.png" alt="" width="299" height="171" /></span></div>
+                body: `<div style="text-align: center;"><span><img src="https://cdn.tolfix.com/images/Tolfix.png" alt="" width="299" height="171" /></span></div>
                 <div style="text-align: center;"><span>Welcome to the Contribution Program!</span></div>
-                <div style="text-align: center;">You are now officially in the contribution program, you can find more information on <a href="https://contribute.tolfix.com/">https://contribute.tolfix.com/</a>.</div>
+                <div style="text-align: center;"><span>First off, we want to thank you for joining the program, it means the world to us.</span></div>
                 <div style="text-align: center;">&nbsp;</div>
-                <div style="text-align: center;">You can join our discord server to receive one of your first perks! Our "Contributor Program" role, who wonders what can be hidden within that role..</div>
+                <div style="text-align: center;">You are now officially a part of the program, for more information or any questions you might have regarding this, be sure to check out <a href="https://contribute.tolfix.com/">https://contribute.tolfix.com/</a> or feel free to ask me about it on <a href="https://discord.tolfix.com/">discord</a> if you are still unsure about the matter.</div>
                 <div style="text-align: center;">&nbsp;</div>
-                <div style="text-align: center;">We will continue notifying you on your progress when you contribute through email, and also on our discord server for rewards.</div>
+                <div style="text-align: center;"><span>You are free to join our discord server, where you will receive one of your first perks, which is the &ldquo;Contribution Program&rdquo; role. Who knows what secrets and treasures are hidden behind it?</span></div>
                 <div style="text-align: center;">&nbsp;</div>
-                <div style="text-align: center;">For now.. how about checking our repositories or tasks to contribute on? There is always something to improve!</div>
+                <div style="text-align: center;"><span>You will be continuously notified about your progress, whenever you contribute, via e-mail and as well on discord for rewards.</span></div>
                 <div style="text-align: center;">&nbsp;</div>
-                <div style="text-align: center;">Have fun!</div>
-                </div>
+                <div style="text-align: center;"><span>Now that you&rsquo;ve been caught up with all the nooks and crannies, make sure to check out our repositories or tasks, to see what can be improved or added. </span></div>
+                <div style="text-align: center;"><span>Thank you and have fun! ~ </span><span>Tolfix</span></div>
                 `
             });
 
