@@ -1,8 +1,7 @@
 import { Client } from "discord.js";
 import { CronJob } from "cron";
 import Logger from "../../Lib/Logger";
-import { Discord_Contribution_Program_Role_Id, Discord_Contributor_Role_Id } from "../../Config";
-import { Role } from "discord.js";
+import { Discord_Contribution_Program_Role_Id } from "../../Config";
 import ContributorModel from "../../Database/Schemas/Contributor";
 
 export default function CheckerHandler(client: Client)
