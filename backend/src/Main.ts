@@ -6,5 +6,6 @@ import "./Server/Express";
 import "./Discord/Client";
 import "./Events/NodeEvents";
 
-// Crons
-import "./Cron/PointGathering/CronPointGathering";
+// Crons will automate this later.
+// TODO: Automate it
+require("./Cron/PointGathering/CronPointGathering").default();
