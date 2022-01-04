@@ -10,7 +10,10 @@ export default async (contributor: IContributor) =>
     const c_contributor_commits = [...CacheRespositories.values()].filter(e => e.contributors.some(e => e.author.id === contributor.github_id));
 
     // Get the total commits and add it to the contributor
-    const total_commits = c_contributor_commits.reduce((a, b) => a + b.contributors.filter(e => e.author.id === contributor.github_id).length, 0);
+    const total_commits = c_contributor_commits.reduce((a, b) => 
+        a + 
+        // @ts-ignore
+        b.contributors.find(e => e.author.id === contributor.github_id).total ?? 0, 0);
 
     // Get point table
     const [point_table, e_point_table] = await AW(await PointTableModel.findOne({
