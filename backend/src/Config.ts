@@ -14,7 +14,7 @@ export const Full_Domain = `${Http_Schema}://${Domain === "localhost" ? `localho
 export const Express_Session_Secret = process.env.SESSION_SECRET ?? require("crypto").randomBytes(20).toString("hex");
 
 // Database
-export const MongoDB_URI = process.env.MONGO_URI ?? "mongodb://localhost/cpg";
+export const MongoDB_URI = process.env.MONGO_URI ?? "mongodb://localhost/cb";
 
 /*
 * Github
@@ -22,6 +22,7 @@ export const MongoDB_URI = process.env.MONGO_URI ?? "mongodb://localhost/cpg";
 export const Github_Client_Id = process.env.GITHUB_CLIENT_ID ?? "";
 export const Github_Client_Secret = process.env.GITHUB_CLIENT_SECRET ?? "";
 export const Github_Secrets_Sponsorship = process.env.GITHUB_SECRETS_SPONSOR ?? "";
+// TODO: Make this more dyniamic later
 export const Github_Org = "Tolfix";
 export const Github_API = "https://api.github.com/";
 
@@ -32,8 +33,12 @@ export const Discord_Token = process.env.DISCORD_TOKEN ?? "";
 export const Discord_Client_Id = process.env.DISCORD_CLIENT_ID ?? "";
 export const Discord_Client_Secret = process.env.DISCORD_CLIENT_SECRET ?? "";
 export const Discord_Guild_Id = process.env.DISCORD_GUILD_ID ?? "";
+// TODO: Make this more dyniamic later
 export const Discord_Contributor_Role_Id = "876148367779037214";
+// TODO: Make this more dyniamic later
 export const Discord_Contribution_Program_Role_Id = "927240825589624913";
+// TODO: Make this more dyniamic later
+export const Discord_Owners_Id = ["269870630738853888"];
 
 /**
  * @description SMTP config
